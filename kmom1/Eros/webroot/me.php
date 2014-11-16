@@ -9,14 +9,19 @@ include(__DIR__.'/config.php');
 $eros['title'] = "Me-sida för OOPHP";
  
 $eros['header'] = <<<EOD
-<img class='sitelogo' src='img/anax.png' alt='Eros Logo'/>
+<img class='sitelogo' src='img/E.jpg' alt='Eros Logo'/>
 <span class='sitetitle'>Eros, kärlekens gud. (OOPHP)</span>
 <span class='siteslogan'>Kärleken vinner över allt!</span>
 EOD;
  
 $eros['main'] = <<<EOD
 <h1>Vem är jag?</h1>
-<p>Jag heter Thomas Kipple och är en student vid Blekinges Tekniska Högskola (BTH) och har tänkt att läsa Webbprogrammeringskurserna i 3 år framåt.</p>
+<p>Jag heter Thomas Kipple och går på Webbprogrammeringsprogrammet på BTH. Jag är egentligen från Norge men har bott i Sverige sedan 2003.
+
+Jag har bott i Göteborg, specifikt i Angered och blev väldigt dator- och spelintresserad när jag blev 12.
+ Jag gick på NTI-EC som är en IT-teknisk baserad skola där jag fick läsa Webbutveckling 1 & 2 samt Programmering 1, 
+ så jag har redan förkunskaper när det gäller HTML, CSS och PHP. Jag bor nu för närvarande i Ronneby och tänker göra det framöver. 
+ Mina intressen är böcker, spel, historia och internet. </p>
 EOD;
 
 $eros['footer'] = <<<EOD

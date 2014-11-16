@@ -1,6 +1,6 @@
 <?php
-if(!function_exists('GenerateMenu')){
-   function GenerateMenu($menu, $class) {
+class CNavigation{
+  public static function GenerateMenu($menu, $class) {
     if(isset($menu['callback'])) {
       $items = call_user_func($menu['callback'], $menu['items']);
     }

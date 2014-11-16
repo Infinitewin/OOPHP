@@ -1,7 +1,6 @@
 <!doctype html>
 <html class='no-js' lang='<?=$lang?>'> <!-- Modernizr will replace the class 'no-js' with a list of features supported by the browser -->
 <head>
-<?=include('../src/CNavigation/CNavigation.php');?>
 <script src='<?=$modernizr?>'></script>
 <meta charset='utf-8'/>
 <title><?=get_title($title)?></title>
@@ -11,22 +10,10 @@
 <?php endforeach; ?>
 </head>
 <body>
-<?php
-$menu = array(
-  'callback' => 'modifyNavbar',
-  'items'    => array(
-    'home'   => array('text'=>'Me-sidan',     'url'=>'me.php', 'class'=>null),
-    'report' => array('text'=>'Rapportering', 'url'=>'report.php', 'class'=>null),
-    'source' => array('text'=>'Källkod',      'url'=>'CSource.php', 'class'=>null),
-  ),
-);
-$navbar = "navbar";
-?>
   <div id='wrapper'>
     <div id='header'><?=$header?></div>
     <div id='main'><?=$main?>
-	<?=print_r(GenerateMenu($menu, $navbar));?>
-	<?=var_dump(function_exists('GenerateMenu'));?>
+	<?=(CNavigation::GenerateMenu($menu, $navbar));?>
 	</div>
     <div id='footer'><?=$footer?></div>
   </div>

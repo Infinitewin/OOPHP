@@ -75,9 +75,28 @@ $eros['modernizr'] = 'js/modernizr.js';
 $eros['jquery'] = '//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js';
 //$eros['jquery'] = null; // To disable jQuery
 
+
+/**
+* Settings for menu options
+*
+*/
+$eros["menu"] = array(
+  'callback' => 'modifyNavbar',
+  'items'    => array(
+    'home'   => array('text'=>'Me-sidan',      'url'=>'me.php', 'class'=>null),
+    'report' => array('text'=>'Rapportering',  'url'=>'report.php', 'class'=>null),
+    'source' => array('text'=>'Eros-Källkod',  'url'=>'CSource.php', 'class'=>null),
+	'source2' => array('text'=>'Full-källkod', 'url'=>'../source.php', 'class'=>null),
+  ),
+);
+$eros['navbar'] = <<<EOD
+navbar
+EOD;
+
+
 /**
  * Settings for personal JavaScript files.
  *
  */
-$anax['javascript_include'] = array();
+//$anax['javascript_include'] = array();
 //$anax['javascript_include'] = array('js/main.js'); // To add extra javascript files

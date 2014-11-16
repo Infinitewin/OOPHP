@@ -9,24 +9,24 @@ include(__DIR__.'/config.php');
 $eros['title'] = "Rapporterings-sida";
  
 $eros['header'] = <<<EOD
-<img class='sitelogo' src='img/anax.png' alt='Eros Logo'/>
+<img class='sitelogo' src='img/E.jpg' alt='Eros Logo'/>
 <span class='sitetitle'>Eros, kärlekens gud. (OOPHP)</span>
 <span class='siteslogan'>Kärleken vinner över allt!</span>
 EOD;
  
 $eros['main'] = <<<EOD
 <h1>Kursmoment 1:</h1>
-<p>Skriv redovisningstext på din me-sida.
- Skriv ett stycke (minst 15 meningar) om kursmomentet. Reflektera över svårigheter, problem, lösningar, erfarenheter, lärdomar, resultatet, etc.
-
-Se till att följande frågor besvaras i texten:
-
-    Vilken utvecklingsmiljö använder du?
-    Berätta hur det gick att jobba igenom guiden “20 steg för att komma igång PHP”, var något nytt eller kan du det?
-    Vad döpte du din webbmall Anax till?
-    Vad anser du om strukturen i Anax, gjorde du några egna förbättringar eller något du hoppade över?
-    Gick det bra att inkludera source.php? Gjorde du det som en modul i ditt Anax?
-    Gjorde du extrauppgiften med GitHub?
+<p>Jag använder Notepad++ som min texteditor och Filezilla som min koppling mot studentservern. 
+	Jag har också laddat ner XXAMP för att kunna arbeta lokalt men jag tycker att filerna flyger runt för mycket då.
+	PHP har jag redan haft lite kunskaper om så det var inte så svårt att gå igenom PHP20 guiden.
+	Eftersom att Mikael hade sin webbmall döpt till något från antika Grekland så valde jag Eros, kärlekens gud.
+	Jag lade till source.php utanför webroot med källkod till alla filer som sin egna lilla fil och CSource.php inom Eros som en modul av Anax.
+	Jag hade jobbat lite med GitHub under 3an i gymnasiet så det gick snabbt att lägga upp filerna. Jag heter Infinitewin på GitHub (https://github.com/Infinitewin)
+	Jag hade väldiga svårigheter med just menyuppgiften då det fanns kod som man skulle dra ner från dbwebb.se och så var koden fel eller så hade den en kodrad som inte blev förklarad.
+	Jag använder GenerateMenu-funktionen för att kunna skriva ut menyn men i uppgiftsexemplet så använde man klassen framför GenerateMenu 
+	så det stod CNavigation::GenerateMenu. Eftersom att jag hade inkluderat filen och att funktionen var publik så behövde man inte använda klassen + scopeoperatorn för att kunna komma åt funktionen,
+	och eftersom att klassnamnet kom in i bilden så hoppade Autoloadern in och försökte inkludera filen en till gång som gjorde att programmet gick helt sönder. Tog mig runt 2 timmar att komma på problemet.
+	Men Anax-delen av uppgiften var ganska straightforward och med hjälp av PHP-20 guiden så förstod jag rätt enkelt hur allt fungerade.
 </p>
 EOD;
 

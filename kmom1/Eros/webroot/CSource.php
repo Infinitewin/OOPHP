@@ -305,7 +305,7 @@ $content = $source->View();
 $eros['title'] = "Hello World";
  
 $eros['header'] = <<<EOD
-<img class='sitelogo' src='img/anax.png' alt='Eros Logo'/>
+<img class='sitelogo' src='img/E.png' alt='Eros Logo'/>
 <span class='sitetitle'>Eros webbtemplate</span>
 <span class='siteslogan'>Återanvändbara moduler för webbutveckling med PHP</span>
 EOD;
